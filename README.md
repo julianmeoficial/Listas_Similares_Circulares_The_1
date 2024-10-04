@@ -12,7 +12,7 @@ Name: Bucle_Canciones
 SDK: graalvm-jdk-17 java version "17.0.12"
 
 JavaScript Project:
-Name: Bucle_Canciones_JavaScript
+Name: Buble_Canciones_JavaScript
 SDK: <NO SDK>
 Se utilizó Node.js de plugin, y luego se descragaron automaticamente las propiedades y librerias.
 
