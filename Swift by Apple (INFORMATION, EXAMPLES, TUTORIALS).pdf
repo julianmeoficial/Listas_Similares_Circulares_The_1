@@ -1,1 +1,240 @@
+**ESTA ES UNA VISUALIZACIÓN DIRECTA EN GITHUB, EL DOCUMENTO PDF DE ESTA INFORMACIÓN TIENE NOMBRE DE: "Swift by Apple.pdf".**
+<aside>
 
+**Documento creado y editado por:**
+*Julian Martinez Espitia & Monica Vellojin Martinez* 
+Universidad de Cartagena - Centro Tutorial Cereté
+Octubre 4 de 2024.
+
+**Version web de este documento (recomendada para visualización completa):**
+[https://julianmeoficial.notion.site/Swift-by-Apple-1168b2d8659c80c3a971cd42c398dd3e?pvs=4](https://www.notion.so/Swift-by-Apple-1168b2d8659c80c3a971cd42c398dd3e?pvs=21) 
+
+> **Nota:**
+> 
+> 
+> *Los cambios agregados después del 4 de octubre de 2024, solo podrán ser visualizados en la versión web (No PDF o similares)*
+> 
+</aside>
+
+Swift es un lenguaje de programación desarrollado por Apple, lanzado en 2014. Está diseñado para ser un lenguaje moderno, rápido y seguro, facilitando el desarrollo de aplicaciones para las plataformas de Apple, como iOS, macOS, watchOS, tvOS y, más recientemente, visionOS. A continuación se presenta un análisis detallado sobre Swift, su importancia, diferencias con Java, sintaxis básica, cambios recientes, y similitudes con Kotlin.
+
+### Concepto y Importancia
+
+Swift es un lenguaje de programación multiparadigma que combina características de programación funcional y orientada a objetos. Su diseño se centra en la seguridad y la eficiencia, lo que **permite a los desarrolladores escribir código más limpio y menos propenso a errores**. La importancia de Swift radica en su **capacidad para facilitar el desarrollo ágil de aplicaciones en el ecosistema de Apple**, donde la **calidad y la experiencia** del usuario son esenciales.
+
+# Diferencias Respecto a Java
+
+| **Característica** | **Java** | **Swift** |
+| --- | --- | --- |
+| **Tipo** | Lenguaje orientado a objetos | Lenguaje multiparadigma |
+| **Sintaxis** | Más compleja y verbosa | Más simple y legible |
+| **Gestión de memoria** | Recolección de basura (Garbage Collection) | Contador de referencias automático (ARC) |
+| **Plataforma** | Independiente (Android, Web) | Específico para plataformas Apple |
+| **Compilación** | Compilado a bytecode | Compilado a código máquina |
+
+Java es un lenguaje más antiguo que ha sido ampliamente utilizado en diversas plataformas, mientras que Swift ha sido diseñado específicamente para optimizar el desarrollo en el ecosistema de Apple. La sintaxis de Swift es más fácil de aprender y usar, lo que lo convierte en una opción popular entre los nuevos desarrolladores.
+
+# Sintaxis Básica
+
+Swift utiliza una sintaxis concisa y clara. A continuación se presentan algunos ejemplos básicos:
+
+- **Declaración de Variables:**
+    
+    ```swift
+    var nombre: String = "Juan"
+    let edad: Int = 30
+    
+    ```
+    
+- **Dictionaries:**
+    
+    ```swift
+    var diccionario: [String: Int] = ["Uno": 1, "Dos": 2]
+    
+    ```
+    
+- **Funciones:**
+    
+    ```swift
+    func saludar(nombre: String) -> String {
+        return "Hola \\(nombre)"
+    }
+    
+    ```
+    
+- **Estructuras de Control:**
+    
+    ```swift
+    if edad > 18 {
+        print("Es mayor de edad")
+    } else {
+        print("Es menor de edad")
+    }
+    
+    ```
+    
+- **Ciclos:**
+    
+    ```swift
+    for numero in 1...5 {
+        print(numero)
+    }
+    
+    ```
+    
+
+## Principales Diferencias entre la Sintaxis de Swift y Java
+
+La sintaxis de Swift y Java presenta diferencias significativas que reflejan sus enfoques y filosofías de diseño. A continuación, se detallan las principales diferencias:
+
+### Verbosidad
+
+- **Java:** La sintaxis de Java es más **verbal** y **descriptiva**, lo que puede resultar en un código más extenso. Por ejemplo, la definición de una clase y sus métodos requiere más líneas de código.
+- **Swift:** La sintaxis de Swift es más **concisa** y **limpia**, lo que facilita la lectura y escritura del código. Esto se traduce en menos líneas para lograr la misma funcionalidad.
+
+### Declaración de Variables
+
+- **Java:** Las variables deben ser declaradas con su tipo explícitamente. Por ejemplo:
+    
+    ```java
+    String nombre = "Juan";
+    int edad = 30;
+    
+    ```
+    
+- **Swift:** Permite inferencia de tipos, lo que significa que el compilador puede deducir el tipo a partir del valor asignado:
+    
+    ```swift
+    var nombre = "Juan"
+    var edad = 30
+    
+    ```
+    
+
+### Constructores
+
+- **Java:** Utiliza constructores con el mismo nombre que la clase:
+    
+    ```java
+    public class Persona {
+        public Persona() {
+            // Constructor
+        }
+    }
+    
+    ```
+    
+- **Swift:** Utiliza el método `init()` para definir constructores:
+    
+    ```swift
+    class Persona {
+        init() {
+            // Constructor
+        }
+    }
+    
+    ```
+    
+
+### Herencia
+
+- **Java:** Usa la palabra clave `extends` para indicar herencia:
+    
+    ```java
+    class Hijo extends Padre {
+        // Cuerpo de la clase
+    }
+    
+    ```
+    
+- **Swift:** Utiliza el símbolo `:` para la herencia:
+    
+    ```swift
+    class Hijo: Padre {
+        // Cuerpo de la clase
+    }
+    
+    ```
+    
+
+### Creación de Objetos
+
+- **Java:** La creación de un objeto se realiza mediante el uso de `new`:
+    
+    ```java
+    Persona obj = new Persona();
+    
+    ```
+    
+- **Swift:** Se asigna directamente sin necesidad de `new`:
+    
+    ```swift
+    var obj = Persona()
+    
+    ```
+    
+
+### Manejo de Opcionales
+
+- **Java:** No tiene un concepto nativo equivalente a los opcionales; en su lugar, se utilizan valores nulos, lo que puede llevar a errores `NullPointerException`.
+- **Swift:** Introduce los opcionales (`Optional`), permitiendo manejar la ausencia de valores de manera más segura:
+    
+    ```swift
+    var nombre: String? = nil // Puede ser un valor o nil
+    
+    ```
+    
+
+Las diferencias entre la sintaxis de Swift y Java reflejan sus respectivos enfoques hacia la programación. Swift está diseñado para ser más accesible y menos propenso a errores, mientras que Java ofrece una estructura más tradicional y detallada. Estas características hacen que cada lenguaje sea adecuado para diferentes tipos de proyectos, dependiendo del contexto y las necesidades del desarrollador.
+
+## Cambios Recientes Anunciados por Apple en WWDC
+
+En la Worldwide Developer Conference (WWDC) de 2023 y 2024, Apple anunció varias mejoras significativas para Swift:
+
+- **Swift Concurrency:** Introducción de nuevas características para manejar la concurrencia de manera más eficiente mediante `async/await` y actores.
+- **Mejoras en el rendimiento:** Optimización del compilador para reducir los tiempos de compilación y mejorar la ejecución del código.
+- **Soporte para visionOS:** Adaptaciones específicas para desarrollar aplicaciones en el nuevo sistema operativo **visionOS**.
+
+## Facilidad y Sencillez para Codificar
+
+Swift ha sido diseñado con la facilidad de uso en mente. Su sintaxis clara y sus características modernas permiten a los desarrolladores crear aplicaciones rápidamente. Esto es especialmente relevante en entornos como iOS y macOS, donde **la experiencia del usuario es primordial**. La **gestión automática de memoria (ARC) reduce la carga sobre los programadores** al manejar automáticamente la memoria utilizada por las aplicaciones.
+
+## Similitudes con Kotlin
+
+Swift y Kotlin comparten varias similitudes que los hacen atractivos para desarrolladores modernos:
+
+- **Sintaxis moderna:** Ambos lenguajes tienen una sintaxis limpia y concisa que facilita su aprendizaje.
+- **Seguridad de tipos:** Tanto Swift como Kotlin son lenguajes estáticamente tipados, lo que ayuda a detectar errores durante la compilación.
+- **Programación funcional:** Ambos lenguajes admiten conceptos como funciones de orden superior e inmutabilidad.
+
+Sin embargo, hay diferencias clave; por ejemplo, **Kotlin utiliza clases de datos** mientras que Swift utiliza **estructuras (structs)** para manejar datos.
+
+En conclusión, Swift es un lenguaje potente y versátil que ha revolucionado el desarrollo dentro del ecosistema Apple. Su diseño moderno no solo mejora la productividad del desarrollador sino que también proporciona herramientas robustas para crear aplicaciones seguras y eficientes. Recomendamos revisar las referencias bibliográficas para un mayor contexto, al igual que la siguiente sección de videos recomendados. 
+
+## Videos Recomendados:
+
+1. [Swift desde Cero: Primeros Pasos en una hora](https://www.youtube.com/watch?v=kpsVJptSv1U)
+2. [Swift Programming Tutorial - Full Course for Beginners](https://www.youtube.com/watch?v=8Xg7E9shq0U)
+3. [¿Cómo usar el STORYBOARD en XCODE? Consejos para sacar el máximo potencia (Interface Builder)](https://www.youtube.com/watch?v=GhGRpfaF-uA)
+4. [SwiftUI: Curso XCODE desde CERO para PRINCIPIANTES](https://www.youtube.com/watch?v=hGIzLGgf3Bo)
+5. [XCODE: ¿Cómo crear una aplicación?](https://www.youtube.com/watch?v=Wfh0FYR0z6I)
+
+## Referencias bibliográficas:
+
+- Espitia, J. M., & Vellojin Martinez, M. (2024, 4 de octubre). *Swift by Apple*. Notion. [https://julianmeoficial.notion.site/Swift-by-Apple-1168b2d8659c80c3a971cd42c398dd3e?pvs=4](https://www.notion.so/Swift-by-Apple-1168b2d8659c80c3a971cd42c398dd3e?pvs=21)⁠
+- H, E., & H, E. (2023, October 29). *Swift vs. otros lenguajes: Comparativa y ventajas competitivas*. Codigo Vanguardia. https://codigovanguardia.com/desarrollo-movil/swift-vs-otros-lenguajes-comparativa-y-ventajas-competitivas/
+- GeeksforGeeks. (2021, July 12). *Difference between Java And Swift*. GeeksforGeeks. https://www.geeksforgeeks.org/difference-between-java-and-swift/
+- *(24) Swift and Kotlin: The Subtle Differences and Similarities | LinkedIn*. (n.d.). https://www.linkedin.com/pulse/swift-kotlin-subtle-differences-similarities-solicy/
+- Ługowski, P. (2024, July 2). *Kotlin vs Swift – Which Programming Language is Better?* CrustLab. https://crustlab.com/blog/kotlin-vs-swift/
+- JavaIndia Blog. (2021, August 10). *Java vs Swift: Which language to choose for application development?* Java Blog, Insights & Updates. https://www.javaindia.in/blog/java-vs-swift-which-language-to-choose-for-application-development/
+- *Swift - Dictionaries*. (n.d.). https://www.tutorialspoint.com/swift/swift_dictionaries.htm
+- Editor. (2021, September 13). The good and the bad of swift programming language. *AltexSoft*. https://www.altexsoft.com/blog/the-good-and-the-bad-of-swift-programming-language/
+- Moteria, D. (2024, September 25). *What is Swift Programming Language? Why Use It and Advantages*. Elluminati Inc. https://www.elluminatiinc.com/swift-programming-language/
+- Gündüz, C. (2024, October 1). *Migrating my SwiftUI App to VisionOS in 2 Hours*. FlineDev. https://www.fline.dev/migrating-my-swiftui-app-to-visionos/
+- Staff, C. (2024, January 4). *Programming in Swift: Benefits of this popular coding language*. Coursera. https://www.coursera.org/articles/programming-in-swift
+- GeeksforGeeks. (2023, September 19). *Swift Programming Language*. GeeksforGeeks. https://www.geeksforgeeks.org/swift-programming-language/
+- Birmacher, B. (2024, June 20). *3 Key announcements from WWDC 2024 every mobile app developer should know*. Bitrise Blog. https://bitrise.io/blog/post/3-key-announcements-from-wwdc-2024-every-mobile-app-developer-should-know
+- Apple Inc. (n.d.). *What’s new in Swift - WWDC24 - Videos - Apple Developer*. Apple Developer. https://developer.apple.com/videos/play/wwdc2024/10136/
+- Wikipedia contributors. (2024, September 23). *Swift (programming language)*. Wikipedia. [https://en.wikipedia.org/wiki/Swift_(programming_language)](https://en.wikipedia.org/wiki/Swift_(programming_language))
+- *Swift Dictionary (With Examples)*. (n.d.). https://www.programiz.com/swift-programming/dictionary
+- GeeksforGeeks. (2022, July 6). *Swift Dictionary*. GeeksforGeeks. https://www.geeksforgeeks.org/swift-dictionary/ 
