@@ -28,4 +28,7 @@ Coding on Notion Code callout section.
 
 **MATERIAL EXTRA**
 Infografías (2)
-Presentation (Figma) (Incrustado en PDF individual con link de visualización).
+Documento informativo sobre Swift de Apple
+Documento PDF sobre listas similares y circulares
+Presentation (Figma) (Incrustado en la sección de Wiki - Páginas: The Figma presentation).: 
+![image](https://github.com/user-attachments/assets/2b718af0-311e-4b70-a4de-28e5344e8a63)
